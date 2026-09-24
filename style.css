@@ -1,0 +1,137 @@
+/* Reset & Base Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 10px;
+}
+
+/* Outer Card Container */
+.card {
+    width: 100%;
+    max-width: 440px;
+    background-color: #0a0a0a;
+    border: 1px solid #1a1a1a;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
+/* Banner Image Setup */
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    background-color: #111;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to top, #0a0a0a, transparent);
+}
+
+/* Content Area */
+.content {
+    padding: 24px 24px 30px;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+}
+
+.tagline {
+    font-size: 0.85rem;
+    color: #888888;
+    margin-top: 4px;
+    font-weight: 400;
+}
+
+.bio {
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    margin-top: 14px;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+/* Links Buttons */
+.links-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    background-color: #121212;
+    border: 1px solid #222222;
+    border-radius: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 400;
+    transition: all 0.2s ease-in-out;
+}
+
+.link-btn i:first-child {
+    font-size: 1.1rem;
+    width: 24px;
+    color: #cccccc;
+}
+
+.link-btn span {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.link-btn .arrow {
+    font-size: 0.75rem;
+    color: #555555;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Hover Effects (Minimalist Grok Style) */
+.link-btn:hover {
+    background-color: #1a1a1a;
+    border-color: #333333;
+}
+
+.link-btn:hover .arrow {
+    color: #ffffff;
+    transform: translate(2px, -2px);
+}
+
+/* Footer */
+footer {
+    margin-top: 28px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #444444;
+}
